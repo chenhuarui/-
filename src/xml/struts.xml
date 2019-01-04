@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+
+    <!--关于登录-->
+    <package name="aboutLogin" namespace="/" extends="struts-default,json-default">
+        <action name="login" class="action.UserAction">
+            <result name="success">/jsp/showMain.jsp</result>
+            <result name="error">/login/login.jsp</result>
+        </action>
+        <action name="getPerson" class="action.UserAction" method="getPerson">
+            <result type="json" name="json">
+                <param name="root">jsonArray</param>
+            </result>
+        </action>
+    </package>
+
+
+    <package name="aboutFolderAndFile" namespace="/" extends="struts-default,json-default">
+        <global-results>
+            <result type="json" name="json">
+                <param name="root">jsonResult</param>
+            </result>
+            <result name="nofresh" type="stream">
+                <param name="contentType">text/html</param>
+                <param name="inputName">inputStream</param>
+            </result>
+        </global-results>
+
+
+        <!--关于文件夹-->
+        <action name="*_Folder" class="action.FolderAction" method="{1}Folder">
+            <result name="success">/jsp/showMain.jsp</result>
+            <result name="refresh">/jsp/refreshPage.jsp</result>
+            <allowed-methods>queryFolder,contentFolder,deleteFolder,addFolder,attributeFolder,updateNameFolder</allowed-methods>
+        </action>
+
+        <!--关于文件-->
+        <action name="*_File" class="action.FileAction" method="{1}File">
+            <result name="refresh">/jsp/refreshPage.jsp</result>
+            <allowed-methods>deleteFile,addFile,updateNameFile,attributeFile,queryFile</allowed-methods>
+        </action>
+
+        <!--有关于文件上传-->
+        <action name="upload" class="action.UploadAction">
+            <result name="refresh">/jsp/refreshPage.jsp</result>
+        </action>
+
+        <!--有关文件的下载-->
+        <action name="download" class="action.DownloadAction">
+            <result name="download" type="stream">
+                <param name="contentDisposition">attachment;filename=${fileName}</param>
+                <param name="inputName">inputStream</param>
+            </result>
+        </action>
+
+
+    </package>
+
+</struts>

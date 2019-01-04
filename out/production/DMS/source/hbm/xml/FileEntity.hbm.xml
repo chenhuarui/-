@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.FileEntity" table="file" schema="document_management">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="currentDirId">
+            <column name="current_dir_id" sql-type="int(11)" not-null="false"/>
+        </property>
+        <property name="fileName">
+            <column name="file_name" sql-type="varchar(11)" length="11" not-null="false"/>
+        </property>
+        <property name="type">
+            <column name="type" sql-type="varchar(11)" length="11" not-null="false"/>
+        </property>
+        <property name="size">
+            <column name="size" sql-type="double" precision="-1" not-null="false"/>
+        </property>
+        <property name="clickCount">
+            <column name="click_count" sql-type="varchar(11)" length="11" not-null="false"/>
+        </property>
+        <property name="createTime">
+            <column name="create_time" sql-type="datetime" not-null="false"/>
+        </property>
+        <property name="updateTime">
+            <column name="update_time" sql-type="datetime" not-null="false"/>
+        </property>
+        <property name="updatePerson">
+            <column name="update_person" sql-type="varchar(11)" length="11" not-null="false"/>
+        </property>
+        <property name="keyword">
+            <column name="keyword" sql-type="varchar(225)" length="225" not-null="false"/>
+        </property>
+    </class>
+</hibernate-mapping>

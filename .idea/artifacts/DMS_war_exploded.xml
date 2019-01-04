@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="DMS:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/DMS_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="DMS/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="DMS" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="ssh" />
+          <element id="library" level="project" name="c3p0-0.9.5.2" />
+          <element id="library" level="module" name="JUnit5.0" module-name="DMS" />
+          <element id="library" level="project" name="json" />
+          <element id="library" level="project" name="json-lib-2.4-jdk15" />
+          <element id="library" level="project" name="struts2-json-plugin-2.5.17" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

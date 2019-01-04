@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <mapping resource="source/hbm/xml/FileEntity.hbm.xml"/>
+        <mapping class="entity.FileEntity"/>
+        <mapping resource="source/hbm/xml/FolderEntity.hbm.xml"/>
+        <mapping class="entity.FolderEntity"/>
+        <mapping resource="source/hbm/xml/RelationshipEntity.hbm.xml"/>
+        <mapping class="entity.RelationshipEntity"/>
+        <mapping resource="source/hbm/xml/UserEntity.hbm.xml"/>
+        <mapping class="entity.UserEntity"/>
+    </session-factory>
+</hibernate-configuration>

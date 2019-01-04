@@ -1,0 +1,136 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+
+.addFile, .addFolder, .upload, .queryPage, .folder-attribute, .file-attribute, .updateName, .folder_updateName {
+    max-width:400px;
+    width:100%;
+    margin: -389px 0 0 707px;
+    position:relative;
+
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+    font-weight:300;
+    font-size: 12px;
+    line-height:30px;
+    color:#777;
+
+    top: 280px;
+    display: none;
+
+}
+
+.updateName, .file-attribute, .folder-attribute, .folder_updateName {
+    margin: -315px 0 0 504px;
+}
+
+
+.contact {
+    background:#BFEFFF;
+    padding:25px;
+    margin:5px 0;
+}
+
+.contact h3 {
+    color: #F96;
+    display: inline;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.contact p {
+    display: inline;
+    float: right;
+    font-size: 27px;
+    color: #0CF;
+    cursor: pointer;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.contact input[type="text"], .contact textarea {
+    width:100%;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+}
+
+.contact textarea {
+    height:70px;
+    max-width:100%;
+    resize:none;
+}
+
+.contact button {
+    cursor:pointer;
+    width:100%;
+    border:none;
+    background:#0CF;
+    color:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    font-size:15px;
+}
+
+.contact button:hover {
+    background:#09C;
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+}
+
+.contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.contact input:focus, .contact textarea:focus {
+    outline:0;
+    border:1px solid #999;
+}
+::-webkit-input-placeholder {
+    color:#888;
+}
+:-moz-placeholder {
+    color:#888;
+}
+::-moz-placeholder {
+    color:#888;
+}
+:-ms-input-placeholder {
+    color:#888;
+}
+
+select {
+    width: 100%;
+}
+
+.key {
+    width:50px;
+    height:50px;
+    overflow-y:scroll;
+}
+
+textarea {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.select {
+    width: 36%;
+}
+

@@ -1,0 +1,126 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+ul,li {
+    margin: 5px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.top_first {
+    background-color: yellow;
+}
+
+.title, .select {
+    display: inline;
+}
+
+.select {
+    float: right;
+}
+
+img {
+    width: 23px;
+}
+
+.top_first ul {
+    width: 100%;
+    display: inline-flex;
+    line-height: 0;
+}
+
+.top_first li {
+    margin-left: 2px;
+}
+
+.top_second {
+    display: flex;
+}
+
+.showPath input {
+    width: 106pc;
+}
+
+.show_main {
+    display: flex;
+}
+
+.left {
+    margin-left: 42px;
+}
+
+.left ul {
+    margin-left: -45px;
+}
+
+.left ul .zz {
+    margin-left: 33px;
+}
+
+.right_foot {
+    text-align: center;
+}
+
+.right_foot ul {
+    display: inline-flex;
+    line-height: 0;
+}
+
+.book {
+    background-color: gainsboro;
+    margin-left: -40px;
+}
+
+.right {
+    margin-left: 60px;
+    width: 100%;
+}
+
+.table
+{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+.table td, table th
+{
+    color: #666;
+    height: 30px;
+}
+.table thead th
+{
+    background-color: #CCE8EB;
+    width: 100px;
+}
+.table tr:nth-child(odd)
+{
+    background: #fff;
+}
+.table tr:nth-child(even)
+{
+    background: #F5FAFA;
+}
+
+.table .td{
+    float: left;
+}
+
+thead th{
+    border: 1px solid #1C86EE;
+}
+
+thead input {
+    float: left;
+}
+
+.super {
+    margin-left: 19px;
+}
+
+.table td span {
+    cursor: pointer;
+}
